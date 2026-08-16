@@ -1,10 +1,6 @@
-#include<stdio.h>
-int main(){
-    printf("Hello World");
-    //abc
+#include <stdio.h>
+
+int main() {
+    printf("welcome");
     return 0;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d4d5c57 (abc)
