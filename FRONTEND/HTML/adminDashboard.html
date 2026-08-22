@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+</head>
+<body>
+<header id="adminHeader">
+    <img id="adminLogo" src="./logoCivic.jpg" alt="CivicPulse AI Logo">
+
+    <section id="adminBrand">
+        <h1>CivicPulse AI</h1>
+        <p>From Citizen Complaints to Intelligent Civic Action</p>
+    </section>
+
+    <nav id="adminNav">
+        <a href="home.html">Home</a>
+        <a href="citizenLogin.html">Citizen Login</a>
+        <a href="officerLogin.html">Officer Login</a>
+        <a href="adminLogin.html">Admin Login</a>
+    </nav>
+</header>
+
+<style>
+    #adminHeader {
+        width: 100% !important;
+        height: 195px !important;
+        position: relative !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+        background: #10192e !important;
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #adminLogo {
+        width: 140px !important;
+        height: 115px !important;
+        max-width: 140px !important;
+        max-height: 115px !important;
+        object-fit: contain !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        display: block !important;
+    }
+
+    #adminBrand {
+        margin: 0 !important;
+        padding-top: 12px !important;
+    }
+
+    #adminBrand h1 {
+        color: white !important;
+        margin: 0 !important;
+        font-size: 38px !important;
+    }
+
+    #adminBrand p {
+        color: #cbd5e1 !important;
+        margin: 5px !important;
+    }
+
+    #adminNav {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 70px !important;
+        margin-top: 32px !important;
+    }
+
+    #adminNav a {
+        color: white !important;
+        background: transparent !important;
+        text-decoration: none !important;
+        padding: 8px 20px !important;
+        border: none !important;
+        width: auto !important;
+    }
+</style>
+<h2>ADMIN DASHBOARD</h2>
+<h3>Overall Data</h3>
+<table border="1">
+    <tr>
+        <th>Data</th>
+        <th>Total</th>
+    </tr>
+    <tr>
+        <td>Total Complaints</td>
+        <td>1250</td>
+    </tr>
+    <tr>
+        <td>Pending</td>
+        <td>180</td>
+    </tr>
+    <tr>
+        <td>In Progress</td>
+        <td>150</td>
+    </tr>
+    <tr>
+        <td>Resolved</td>
+        <td>920</td>
+    </tr>
+</table>
+<hr>
+<h3>Department Data</h3>
+<table border="1">
+    <tr>
+        <th>Department</th>
+        <th>Complaints</th>
+    </tr>
+    <tr>
+        <td>Road</td>
+        <td>320</td>
+    </tr>
+    <tr>
+        <td>Sanitation</td>
+        <td>280</td>
+    </tr>
+    <tr>
+        <td>Water</td>
+        <td>190</td>
+    </tr>
+    <tr>
+        <td>Electrical</td>
+        <td>150</td>
+    </tr>
+</table>
+<br>
+<a href="home.html">Logout</a>
+<footer>
+        <p>CivicPulse AI</p>
+        <p>Understand • Prioritize • Route • Resolve • Verify</p>
+        <p>© 2026 CivicPulse AI</p>
+</footer>
+<script src="../JAVASCRIPT/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+form {
+    width: min(620px, calc(100% - 40px));
+    margin: 20px auto;
+    padding: 30px 34px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 7px 25px rgba(16, 25, 46, .08);
+}
+fieldset {
+    margin: 0;
+    padding: 25px;
+    border: 1px solid #dce3ec;
+    border-radius: 11px;
+}
+legend {
+    padding: 0 10px;
+    color: #287fbe;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+label {
+    color: #44536a;
+    font-weight: bold;
+    font-size: 14px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    margin: 7px 0 14px;
+    padding: 12px 13px;
+    background: #fbfcfe;
+    color: #26344d;
+    border: 1px solid #d5dde8;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+input[type="file"] {
+    padding: 9px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #3b93ca;
+    box-shadow: 0 0 0 3px rgba(59, 147, 202, .12);
+}
+input[type="submit"] {
+    margin-top: 8px;
+    padding: 12px 24px;
+    background: #3188c2;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: #246f9f;
+}
+form input[type="submit"] + br + br {
+    display: none;
+}
+form + p,
+form + br + a,
+body > form + a,
+body > p + a {
+    color: #287fbe;
+}
+body > p {
+    color: #66758b;
+    text-align: center;
+}
+body > p a {
+    color: #287fbe;
+}
+body > h3 {
+    width: min(850px, calc(100% - 40px));
+    margin: 25px auto 10px;
+    color: #26344d;
+}
+
+body > h3 + p,
+body > h3 + p + p,
+body > h3 + p + p + p,
+body > h3 + p + p + p + p,
+body > h3 + p + p + p + p + p {
+    width: min(850px, calc(100% - 40px));
+    margin: 8px auto;
+    padding: 12px 16px;
+    background: white;
+    border-radius: 7px;
+}
+body > img {
+    display: block;
+    max-width: calc(100% - 40px);
+    height: auto;
+    margin: 15px auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(16, 25, 46, .12);
+}
+@media (max-width: 700px) {
+    header {
+        padding: 22px 25px;
+    }
+
+    body > h1 {
+        padding-left: 25px;
+    }
+
+    body > h2 {
+        padding-left: 25px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    fieldset {
+        padding: 18px;
+    }
+
+    nav a {
+        margin-bottom: 5px;
+    }
+}

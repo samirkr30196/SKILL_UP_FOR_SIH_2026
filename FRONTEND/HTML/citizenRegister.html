@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Registration</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+</head>
+<body>
+    <header>
+        <img src="logoCivic.jpg" class="logo" alt="CivicPulse AI Logo">
+        <h1><u>CivicPulse AI</u></h1>
+        <p>From Citizen Complaints to Intelligent Civic Action</p>
+    </header>
+
+    <main>
+        <h2>Citizen Registration</h2>
+
+        <form onsubmit="return citizenRegister(event)">
+            <label for="name">Full Name</label>
+            <input
+                id="name"
+                type="text"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="mobile">Mobile Number</label>
+            <input
+                id="mobile"
+                type="tel"
+                placeholder="Enter your mobile number"
+                pattern="[0-9]{10}"
+                required
+            >
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input
+                id="password"
+                type="password"
+                placeholder="Create a password"
+                minlength="4"
+                required
+            >
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p>
+            Already have an account?
+            <a href="citizenLogin.html">Login</a>
+        </p>
+
+        <p><a href="home.html">Back to Home</a></p>
+    </main>
+
+    <footer>
+        <p>CivicPulse AI</p>
+        <p>Understand • Prioritize • Route • Resolve • Verify</p>
+        <p>© 2026 CivicPulse AI</p>
+    </footer>
+
+    <script src="../JAVASCRIPT/auth.js"></script>
+</body>
+</html>

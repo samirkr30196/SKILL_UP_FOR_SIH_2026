@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citizen Login</title>
+    <title>Officer Login</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/form.css">
 </head>
@@ -21,32 +21,32 @@
         </nav>
     </header>
 
-    <main class="login-layout">
-    <section class="login-form">
-        <h2>Citizen Login</h2>
+    <main>
+        <h2>Officer Login</h2>
 
-        <form onsubmit="return citizenLogin(event)">
-            <label for="email">Email Address</label>
-            <input id="email" type="email"
-                   placeholder="Enter your registered email" required>
+        <form onsubmit="return officerLogin(event)">
+            <label for="officerId">Officer ID</label>
+            <input
+                id="officerId"
+                type="text"
+                placeholder="Enter officer ID"
+                required
+            >
 
             <label for="password">Password</label>
-            <input id="password" type="password"
-                   placeholder="Enter your password" required>
+            <input
+                id="password"
+                type="password"
+                placeholder="Enter password"
+                required
+            >
 
             <button type="submit">Login</button>
         </form>
 
-        <p>New citizen?
-            <a href="citizenRegister.html">Create an account</a>
-        </p>
+        <p>Officer accounts are created by authorized administration.</p>
         <p><a href="home.html">Back to Home</a></p>
-    </section>
-
-    <aside class="login-image">
-        <img src="welcome.png" alt="Welcome Citizen">
-    </aside>
-</main>
+    </main>
 
     <footer>
         <p>CivicPulse AI</p>

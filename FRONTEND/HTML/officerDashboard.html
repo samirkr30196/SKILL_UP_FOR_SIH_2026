@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Officer Dashboard</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+</head>
+<body>
+    <header>
+        <img src="logoCivic.jpg" class="logo" alt="CivicPulse AI Logo">
+        <h1><u>CivicPulse AI</u></h1>
+        <p>From Citizen Complaints to Intelligent Civic Action</p>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="citizenLogin.html">Citizen Login</a>
+            <a href="officerLogin.html">Officer Login</a>
+            <a href="adminLogin.html">Admin Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Officer Dashboard</h2>
+        <p id="departmentText">Loading department...</p>
+
+        <h3>Complaints Assigned to You</h3>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Complaint ID</th>
+                    <th>Issue</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody id="complaintTable">
+                <tr>
+                    <td colspan="5">Loading complaints...</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <a href="home.html" onclick="localStorage.removeItem('officer')">
+            Logout
+        </a>
+    </main>
+
+    <footer>
+        <p>CivicPulse AI</p>
+        <p>Understand • Prioritize • Route • Resolve • Verify</p>
+        <p>© 2026 CivicPulse AI</p>
+    </footer>
+
+    <script src="../JAVASCRIPT/officer.js"></script>
+</body>
+</html>

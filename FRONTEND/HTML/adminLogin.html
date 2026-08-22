@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+</head>
+<body>
+    <header>
+        <img src="logoCivic.jpg" class="logo" alt="CivicPulse AI Logo">
+        <h1><u>CivicPulse AI</u></h1>
+        <p>From Citizen Complaints to Intelligent Civic Action</p>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="citizenLogin.html">Citizen Login</a>
+            <a href="officerLogin.html">Officer Login</a>
+            <a href="adminLogin.html">Admin Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Admin Login</h2>
+
+        <form onsubmit="return adminLogin(event)">
+            <label for="adminId">Admin ID</label>
+            <input
+                id="adminId"
+                type="text"
+                placeholder="Enter admin ID"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                id="password"
+                type="password"
+                placeholder="Enter password"
+                required
+            >
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p><a href="home.html">Back to Home</a></p>
+    </main>
+
+    <footer>
+        <p>CivicPulse AI</p>
+        <p>Understand • Prioritize • Route • Resolve • Verify</p>
+        <p>© 2026 CivicPulse AI</p>
+    </footer>
+
+    <script src="../JAVASCRIPT/auth.js"></script>
+</body>
+</html>

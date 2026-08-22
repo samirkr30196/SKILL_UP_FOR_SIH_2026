@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Complaint</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+</head>
+<body>
+    <header>
+        <h1>CivicPulse AI</h1>
+        <p>Register New Complaint</p>
+    </header>
+
+    <main>
+        <h2>New Complaint</h2>
+
+        <form id="complaintForm">
+    <label for="description">Complaint Description</label>
+    <textarea id="description" required></textarea>
+
+    <label for="image">Upload Image</label>
+    <input id="image" type="file" accept="image/*">
+
+    <label for="location">Location</label>
+    <input id="location" type="text" required>
+
+    <label for="category">Category</label>
+    <select id="category" required>
+        <option value="">Select category</option>
+        <option value="Road">Road</option>
+        <option value="Water">Water</option>
+        <option value="Sanitation">Sanitation</option>
+        <option value="Electricity">Electricity</option>
+        <option value="Health">Health</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <button type="submit">Submit Complaint</button>
+</form>
+        <p><a href="citizenDashboard.html">Back to Dashboard</a></p>
+    </main>
+
+    <script src="../JAVASCRIPT/citizen.js"></script>
+</body>
+</html>

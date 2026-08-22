@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Details</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/form.css">
+</head>
+<body>
+    <header>
+        <img src="logoCivic.jpg" class="logo" alt="CivicPulse AI Logo">
+        <h1><u>CivicPulse AI</u></h1>
+        <p>From Citizen Complaints to Intelligent Civic Action</p>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="officerDashboard.html">Dashboard</a>
+            <a href="adminLogin.html">Admin Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Complaint Details</h2>
+
+        <div id="complaintDetails">Loading complaint...</div>
+
+        <h3>Officer Action</h3>
+        <form id="updateForm">
+            <label for="status">Status</label>
+            <select id="status" required>
+                <option>Pending</option>
+                <option>In Progress</option>
+                <option>Resolved</option>
+            </select>
+
+            <label for="remark">Officer Remark</label>
+            <textarea id="remark" rows="5" placeholder="Enter remark"></textarea>
+
+            <button type="submit">Update Complaint</button>
+        </form>
+
+        <p><a href="officerDashboard.html">Back to Dashboard</a></p>
+    </main>
+
+    <footer>
+        <p>CivicPulse AI</p>
+        <p>Understand • Prioritize • Route • Resolve • Verify</p>
+        <p>© 2026 CivicPulse AI</p>
+    </footer>
+
+    <script src="../JAVASCRIPT/officer.js"></script>
+</body>
+</html>

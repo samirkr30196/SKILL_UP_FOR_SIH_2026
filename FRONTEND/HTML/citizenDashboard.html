@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Dashboard</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+
+    <style>
+        .citizen-header {
+            height: 190px !important;
+            background: #11182f !important;
+            position: relative !important;
+            overflow: hidden !important;
+            text-align: center !important;
+        }
+
+        .citizen-logo {
+            position: absolute !important;
+            left: 0 !important;
+            top: 0 !important;
+            width: 140px !important;
+            height: 115px !important;
+            object-fit: contain !important;
+        }
+
+        .citizen-brand h1 {
+            margin: 0 !important;
+            padding-top: 15px !important;
+            color: white !important;
+        }
+
+        .citizen-brand p {
+            color: #cbd5e1 !important;
+            margin: 5px !important;
+        }
+
+        .citizen-nav {
+            display: flex !important;
+            justify-content: center !important;
+            gap: 60px !important;
+            margin-top: 35px !important;
+        }
+
+        .citizen-nav a {
+            color: white !important;
+            background: transparent !important;
+            text-decoration: none !important;
+            padding: 8px 20px !important;
+        }
+
+        .citizen-content {
+            padding: 30px !important;
+            background: #f3f6fa !important;
+            min-height: 400px !important;
+        }
+
+        .citizen-content h2 {
+            color: #26344d !important;
+        }
+
+        .new-complaint-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #168bd1;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+        .new-complaint-btn:hover {
+            background: #168bd1 !important;
+            color: white !important;
+            text-decoration: none !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="citizen-header">
+        <img src="logoCivic.jpg" class="citizen-logo" alt="CivicPulse AI Logo">
+
+        <div class="citizen-brand">
+            <h1><u>CivicPulse AI</u></h1>
+            <p>From Citizen Complaints to Intelligent Civic Action</p>
+        </div>
+
+        <nav class="citizen-nav">
+            <a href="home.html">Home</a>
+            <a href="citizenLogin.html">Citizen Login</a>
+            <a href="officerLogin.html">Officer Login</a>
+            <a href="adminLogin.html">Admin Login</a>
+        </nav>
+    </header>
+
+    <main class="citizen-content">
+        <h2 id="welcomeText">Welcome, Citizen</h2>
+
+        <a class="new-complaint-btn" href="newComplaint.html">
+            Register New Complaint
+        </a>
+
+        <h3>My Complaints</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Category</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody id="complaintTable">
+                <tr>
+                    <td colspan="5">Loading complaints...</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <button onclick="logout()">Logout</button>
+    </main>
+
+    <footer>
+        <p>CivicPulse AI</p>
+        <p>Understand • Prioritize • Route • Resolve • Verify</p>
+        <p>© 2026 CivicPulse AI</p>
+    </footer>
+
+    <script src="../JAVASCRIPT/citizen.js"></script>
+</body>
+</html>
